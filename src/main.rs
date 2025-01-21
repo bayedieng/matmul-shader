@@ -33,4 +33,5 @@ async fn main() {
         )
         .await
         .unwrap();
+    let module = device.create_shader_module(wgpu::include_wgsl!("../matmul.wgsl"));
 }
